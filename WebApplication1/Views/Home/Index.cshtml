@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Mi Portafolio Profesional";
+}
+
+<!-- SECCIÓN DE ENCABEZADO / PERFIL -->
+<section class="text-center py-5 bg-light rounded-3 mb-4 shadow-sm">
+    <div class="container">
+        <!-- FOTO DE PERFIL -->
+        <img src="~/imagenes/fotodeperfil.jfif" 
+             alt="Foto de Perfil" 
+             class="rounded-circle img-thumbnail mb-3 shadow" 
+             style="width: 170px; height: 170px; object-fit: cover;" />
+
+        <h1 class="display-4 fw-bold text-primary">¡Hola! Soy Eyris</h1>
+        <p class="lead text-muted">Desarrollador Web, Diseñadora & Estudiante de Sistemas</p>
+        <p class="mx-auto text-secondary" style="max-width: 650px;">
+            Bienvenido a mi portafolio profesional. Aquí presento mis proyectos destacados, 
+            mi experiencia en desarrollo web con ASP.NET Core MVC e integración continua en Microsoft Azure.
+        </p>
+        <a href="#proyectos" class="btn btn-primary btn-lg mt-2 shadow-sm">Ver Proyectos</a>
+    </div>
+</section>
+
+<!-- SECCIÓN DE HABILIDADES TÉCNICAS -->
+<section class="mb-5">
+    <h2 class="text-center mb-4 border-bottom pb-2 fw-bold">Habilidades Técnicas</h2>
+    <div class="row text-center g-3">
+        <div class="col-md-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+                <i class="bi bi-code-slash text-primary fs-1"></i>
+                <h5 class="mt-2 fw-bold">ASP.NET Core</h5>
+                <small class="text-muted">Arquitectura MVC & C#</small>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+                <i class="bi bi-cloud-upload text-success fs-1"></i>
+                <h5 class="mt-2 fw-bold">Microsoft Azure</h5>
+                <small class="text-muted">App Services & Deployment</small>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+                <i class="bi bi-git text-danger fs-1"></i>
+                <h5 class="mt-2 fw-bold">Git & GitHub</h5>
+                <small class="text-muted">Control de Versiones</small>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-3 border rounded bg-white shadow-sm h-100">
+                <i class="bi bi-gear-fill text-warning fs-1"></i>
+                <h5 class="mt-2 fw-bold">Azure DevOps</h5>
+                <small class="text-muted">Pipelines & CI/CD</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE PROYECTOS DESTACADOS -->
+<section id="proyectos" class="mb-5">
+    <h2 class="text-center mb-4 border-bottom pb-2 fw-bold">Mis Proyectos</h2>
+    <div class="row g-4">
+        
+        <!-- PROYECTO 1: AMAZON -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/imagenes/amazon.PNG" class="card-img-top" alt="Proyecto Amazon" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Plataforma estilo Amazon</h5>
+                    <p class="card-text text-muted">
+                        Desarrollo e integración de catálogo de productos utilizando ASP.NET Core MVC y diseño adaptativo.
+                    </p>
+                </div>
+                <div class="card-footer bg-transparent border-top-0 text-end">
+                    <span class="badge bg-primary">ASP.NET</span>
+                    <span class="badge bg-secondary">MVC</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 2: SHEIN -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/imagenes/shein.jfif" class="card-img-top" alt="Proyecto Shein" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Catálogo de Moda Shein</h5>
+                    <p class="card-text text-muted">
+                        Diseño de interfaz interactiva orientada a la experiencia de usuario (UI/UX) para e-commerce.
+                    </p>
+                </div>
+                <div class="card-footer bg-transparent border-top-0 text-end">
+                    <span class="badge bg-dark">UI / UX</span>
+                    <span class="badge bg-info text-dark">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 3: USHAS -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/imagenes/USHAS.jfif" class="card-img-top" alt="Proyecto USHAS" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Sistema Web USHAS</h5>
+                    <p class="card-text text-muted">
+                        Módulo de presentación de marca con integración de CI/CD para despliegue automatizado en Azure.
+                    </p>
+                </div>
+                <div class="card-footer bg-transparent border-top-0 text-end">
+                    <span class="badge bg-success">Azure App Service</span>
+                    <span class="badge bg-warning text-dark">DevOps</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
