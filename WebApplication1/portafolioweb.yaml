@@ -1,5 +1,5 @@
-﻿trigger:
-  - master 
+trigger:
+  - master # Se dispara automáticamente al hacer push a master
 
 pool:
   vmImage: 'windows-2022'
