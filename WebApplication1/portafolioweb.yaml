@@ -1,5 +1,5 @@
 ﻿trigger:
-  - master # Se cambió a master para coincidir con tu rama en GitHub
+  - master 
 
 pool:
   vmImage: 'windows-2022'
@@ -52,7 +52,7 @@ stages:
 
     - task: AzureWebApp@1
       inputs:
-        azureSubscription: 'ConexionAzurePortafolio' # Nombre Service Connection en DevOps
+        azureSubscription: 'ConexionAzurePortafolio'
         appType: 'webApp'
-        appName: 'PortafolioEyris_group'    # Nombre  App Service en Azure Portal
+        appName: 'PortafolioEyris'
         package: '$(System.ArtifactsDirectory)/drop/*.zip'
